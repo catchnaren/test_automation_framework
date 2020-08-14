@@ -382,3 +382,12 @@ JavaScript error: https://s3.amazonaws.com/assets-stage.cavintek.com/scripts-new
 
 ###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
 
+1597425361114	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\naren\\AppData\\Local\\Temp\\rust_mozprofile.ZzUjvmK88h3X"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1597425399187	Marionette	INFO	Listening on port 57002
+1597425399637	Marionette	WARN	TLS certificate errors will be ignored for this session
+1597425447352	Marionette	INFO	Stopped listening on port 57002
+[Child 6752, Chrome_ChildThread] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 522
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
