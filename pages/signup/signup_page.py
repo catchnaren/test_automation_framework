@@ -17,7 +17,7 @@ class SignupPage(BasePage):
     @property
     def check_box(self):
         locator = Locator(
-            by=By.XPATH, value='//input[@id="chkTerm"]/following-sibling::label')
+            by=By.XPATH, value='//label[contains(text(), "I Agree")]')
         return BaseElement(driver=self.driver, locator=locator)
 
     @property

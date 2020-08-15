@@ -6,8 +6,9 @@ from pages.dashboard.dashboard_page import DashboardPage
 
 @mark.smoke
 @mark.login
-def test_login(browser, app_config, user_data):
+def test_login(chrome_browser, app_config, user_data):
     url = app_config.base_url
+    browser = chrome_browser
     login_page = LoginPage(driver=browser, base_url=url)
     login_page.go()
     login_page.client_id_field.input_text(user_data[0])

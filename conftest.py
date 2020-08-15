@@ -4,6 +4,7 @@ from config import Config
 from selenium import webdriver
 
 data_path = 'data\\test_data.json'
+chromeDriverPath = 'drivers\\chromedriver.exe'
 
 
 def load_user_data(path):
@@ -39,8 +40,8 @@ def app_config(env):
 
 @fixture(scope='session')
 def chrome_browser():
-    browser = webdriver.Chrome()
-    # browser.maximize_window()
+    browser = webdriver.Chrome(chromeDriverPath)
+    browser.maximize_window()
     yield browser
     print("TEAR_DOWN!!!!")
 
