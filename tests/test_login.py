@@ -6,10 +6,6 @@ from pages.dashboard.dashboard_page import DashboardPage
 
 @mark.smoke
 @mark.login
-# @mark.parametrize('user_data', [
-#     ('cflow-automation.com', 'naren@cflow-automation.com', 'tester1'),
-#     ('cflow-automation.com2', 'naren@cflow-automation.com2', 'tester2'),
-# ])
 def test_login(browser, app_config, user_data):
     url = app_config.base_url
     login_page = LoginPage(driver=browser, base_url=url)
